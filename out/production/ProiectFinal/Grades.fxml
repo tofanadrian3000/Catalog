@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1013.0" prefWidth="1920.0" styleClass="background" stylesheets="@CSS/HomeworksStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.GradeController">
+   <children>
+      <TableView fx:id="gradeTableView" layoutX="245.0" layoutY="187.0" minWidth="-Infinity" prefHeight="415.0" prefWidth="950.0" styleClass="homeworkTable" />
+      <AnchorPane layoutY="2.0" prefHeight="889.0" prefWidth="200.0" styleClass="anchorpane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox layoutY="104.0" prefHeight="220.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0">
+               <children>
+                  <Button fx:id="studentsButton" mnemonicParsing="false" onAction="#studentsButtonHandler" prefHeight="69.0" prefWidth="220.0" styleClass="navigation" text="Students">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="homeworksButton" mnemonicParsing="false" onAction="#homeworksButtonHandler" prefHeight="69.0" prefWidth="220.0" styleClass="navigation" text="Homework">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="" mnemonicParsing="false" prefHeight="69.0" prefWidth="220.0" styleClass="selectedNavigation" text="Grades">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="17.0" layoutY="586.0" minWidth="-Infinity" prefHeight="285.0" prefWidth="199.0" spacing="10.0" styleClass="anchorpane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+               <children>
+                  <Line endX="100.0" startX="-100.0">
+                     <stroke>
+                        <LinearGradient endX="1.0" endY="0.5238095238095238" startY="0.4571428571428572">
+                           <stops>
+                              <Stop color="#404040" />
+                              <Stop color="#909090" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </stroke>
+                  </Line>
+                  <Button fx:id="finalGradesButton" mnemonicParsing="false" onAction="#writeFinalGradesButtonHandler" prefHeight="40.0" prefWidth="200.0" styleClass="navigation" text="Final grades">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Line endX="100.0" startX="-100.0">
+                     <stroke>
+                        <LinearGradient endX="1.0" endY="0.5238095238095238" startY="0.4571428571428572">
+                           <stops>
+                              <Stop color="#404040" />
+                              <Stop color="#909090" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </stroke>
+                  </Line>
+                  <Button fx:id="hardestHomeworkButton" mnemonicParsing="false" onAction="#writeHardestHomeworksButtonHandler" prefHeight="40.0" prefWidth="200.0" styleClass="navigation" text="Hardest homework">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Line endX="100.0" startX="-100.0">
+                     <stroke>
+                        <LinearGradient endX="1.0" endY="0.5238095238095238" startY="0.4571428571428572">
+                           <stops>
+                              <Stop color="#404040" />
+                              <Stop color="#909090" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </stroke>
+                  </Line>
+                  <Button fx:id="passableStudentsButton" mnemonicParsing="false" onAction="#writePassableStudetsButtonHandler" prefHeight="40.0" prefWidth="200.0" styleClass="navigation" text="Passable students">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Line endX="100.0" startX="-100.0">
+                     <stroke>
+                        <LinearGradient endX="1.0" endY="0.5238095238095238" startY="0.4571428571428572">
+                           <stops>
+                              <Stop color="#404040" />
+                              <Stop color="#909090" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </stroke>
+                  </Line>
+                  <Button fx:id="topGroupsButton" mnemonicParsing="false" onAction="#writeTopGroupsButtonHandler" prefHeight="40.0" prefWidth="200.0" styleClass="navigation" text="Top groups">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Line endX="100.0" startX="-100.0">
+                     <stroke>
+                        <LinearGradient endX="1.0" endY="0.5238095238095238" startY="0.4571428571428572">
+                           <stops>
+                              <Stop color="#404040" />
+                              <Stop color="#909090" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </stroke>
+                  </Line>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="1305.0" layoutY="36.0" prefHeight="894.0" prefWidth="551.0" styleClass="rightAnchorPane">
+         <children>
+            <VBox alignment="TOP_CENTER" layoutX="43.0" layoutY="23.0" prefHeight="730.0" prefWidth="453.0" spacing="50.0">
+               <children>
+                  <TextField fx:id="studentTextField" prefHeight="70.0" prefWidth="300.0" promptText="Student name filtered by" styleClass="background">
+                     <font>
+                        <Font size="18.0" />
+                     </font></TextField>
+                  <ComboBox fx:id="homeworkComboBox" prefHeight="70.0" prefWidth="200.0" promptText="Homework" styleClass="background" />
+                  <ComboBox fx:id="groupComboBox" prefHeight="70.0" prefWidth="200.0" promptText="Group filtered by" styleClass="background" />
+                  <TextField fx:id="gradeTextField" prefHeight="70.0" prefWidth="453.0" promptText="Grade" styleClass="background">
+                     <font>
+                        <Font size="18.0" />
+                     </font></TextField>
+                  <TextArea fx:id="feedbackTextArea" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="114.0" prefWidth="453.0" promptText="Feedback" styleClass="textArea">
+                     <font>
+                        <Font size="18.0" />
+                     </font></TextArea>
+                  <TextField fx:id="noExemptionsTextField" prefHeight="70.0" prefWidth="300.0" promptText="No Exemptions" styleClass="background">
+                     <font>
+                        <Font size="18.0" />
+                     </font></TextField>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" layoutY="776.0" prefHeight="100.0" prefWidth="551.0" spacing="30.0">
+               <children>
+                  <Button fx:id="addButton" mnemonicParsing="false" onAction="#addButtonHandler" prefHeight="60.0" prefWidth="210.0" styleClass="background" text="Add">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="resetButton" mnemonicParsing="false" onAction="#resetHandler" prefHeight="60.0" prefWidth="210.0" styleClass="background" text="Reset">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <Pagination fx:id="pagination" layoutX="247.0" layoutY="187.0" prefHeight="450.0" prefWidth="950.0" />
+      <HBox alignment="CENTER" layoutX="245.0" layoutY="22.0" minWidth="-Infinity" prefHeight="100.0" prefWidth="950.0" styleClass="selectedNavigation">
+         <children>
+            <Button fx:id="homeworkGradesButton" mnemonicParsing="false" onAction="#getHomeworkGradesHandler" prefHeight="25.0" prefWidth="292.0" styleClass="selectedNavigation" text="Homework Grades">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="homeworkGroupGradesButton" mnemonicParsing="false" onAction="#getHomeworkGroupGradesHandler" prefHeight="25.0" prefWidth="292.0" styleClass="selectedNavigation" text="Homework Group Grades">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="currenMonthGradesButton" mnemonicParsing="false" onAction="#getCurrentMonthGradesHandler" prefHeight="25.0" prefWidth="292.0" styleClass="selectedNavigation" text="Current Month Grades">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="groupGradesButtonButton" mnemonicParsing="false" onAction="#getGroupGradesHandler" prefHeight="25.0" prefWidth="292.0" styleClass="selectedNavigation" text="Group Grades">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="247.0" layoutY="623.0" prefHeight="370.0" prefWidth="950.0" spacing="70.0">
+         <children>
+            <PieChart fx:id="gradesPerGroupPieChart" prefHeight="179.0" prefWidth="350.0" />
+            <PieChart fx:id="gradesPerLastHomeworkPieChart" prefHeight="179.0" prefWidth="350.0" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

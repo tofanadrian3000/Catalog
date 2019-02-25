@@ -1,0 +1,59 @@
+.background{
+    -fx-background-color: #EFFBF8;//#EBDCB2
+}
+.textField{
+    -fx-background-color: #EFFBF8;
+    -fx-prompt-text-fill: #848484;
+}
+.textArea {
+    -fx-font-family: System;
+    -fx-font-size: 18;
+    -fx-text-fill: black;
+    -fx-prompt-text-fill: #848484;
+    -fx-display-caret:true;
+}
+
+.textArea .content {
+    -fx-background-color: #EFFBF8;
+}
+.anchorpane{
+    -fx-background-color: #021C1E;
+}
+.rightAnchorPane{
+    -fx-background-color: #296D8A;
+}
+.navigation{
+    -fx-background-color: #021C1E;
+    -fx-border-color: transparent;
+    -fx-text-fill: #EBDCB2;
+}
+.selectedNavigation{
+    -fx-background-color: #296D8A;
+    -fx-border-color: transparent;
+    -fx-text-fill: #EBDCB2;
+}
+.homeworkTableColumn{
+
+
+    -fx-text-fill: black;
+    -fx-border-color: #EFFBF8;
+    -fx-border: 1px;
+    -fx-font-size: 18;
+    -fx-font-family: System;
+
+}
+
+.homeworkTable .column-header{
+    -fx-background-color: #296D8A;
+}
+
+.homeworkTable{
+    -fx-background-color: transparent;
+}
+
+.homeworkTable .column-header .label{
+    -fx-background-color: transparent;
+}
+.homeworkTable .table-cell{
+    -fx-background-color: #CEE3F6;
+}
