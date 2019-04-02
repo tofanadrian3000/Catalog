@@ -28,8 +28,8 @@ public class GradeNotification extends Thread {
     public void run() {
         try{
             String host ="smtp.gmail.com" ;
-            String user = "hypertech.contact@gmail.com";
-            String pass = "8B12E217";
+            String user = "email@mail.com";
+            String pass = "password";
             String to = student.getEmail();
             String from = "hypertech.contact@gmail.com";
             String subject = "New Grade Notification";
