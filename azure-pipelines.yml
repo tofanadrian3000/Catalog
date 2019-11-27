@@ -12,7 +12,7 @@ pool: 'Default'
 steps:
 - task: ExecuteMicroFocusTests@0
   inputs:
-    Test1: 'C:\\\\a'
-    fsReportPath: 'C:\\testResult'
+    Test1: 'C:\a'
+    fsReportPath: 'C:\testResult'
     scenarioExecutionTimeout: '30'
     resultsFilename: 'ResultFilename'
