@@ -16,3 +16,9 @@ steps:
     fsReportPath: 'C:\testResult'
     scenarioExecutionTimeout: '30'
     resultsFilename: 'ResultFilename'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: 'C:\testResult'
+    ArtifactName: 'results'
+    publishLocation: 'Container'
