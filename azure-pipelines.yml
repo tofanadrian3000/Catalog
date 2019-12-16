@@ -6,13 +6,13 @@
 trigger:
 - master
 
-pool: 'Default'
+pool: 'AzureVms'
   #vmImage: 'ubuntu-latest'
 
 steps:
 - task: ExecuteMicroFocusTests@0
   inputs:
-    Test1: 'C:\a'
+    Test1: 'C:\Scenarios'
     fsReportPath: 'C:\testResult'
     scenarioExecutionTimeout: '30'
     resultsFilename: 'ResultFilename'
