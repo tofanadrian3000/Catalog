@@ -10,7 +10,8 @@ pool: 'AzureVms'
   #vmImage: 'ubuntu-latest'
 
 steps:
-- task: ExecuteMicroFocusTests@0
+
+- task: ExecMicroFocusTests@0
   inputs:
     Test1: 'C:\Scenarios'
     fsReportPath: 'C:\testResult'
