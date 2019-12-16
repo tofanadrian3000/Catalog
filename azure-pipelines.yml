@@ -19,8 +19,8 @@ steps:
     resultsFilename: 'ResultFilename'
 
 
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: 'C:\testResult'
-    ArtifactName: 'results'
-    publishLocation: 'Container'
+#- task: PublishBuildArtifacts@1
+#  inputs:
+#    PathtoPublish: 'C:\testResult'
+#    ArtifactName: 'results'
+#    publishLocation: 'Container'
