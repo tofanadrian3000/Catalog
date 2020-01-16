@@ -14,7 +14,7 @@ steps:
 - task: ExecMicroFocusTests@0
   inputs:
     Test1: 'C:\Scenarios'
-    fsReportPath: 'C:\testResult'
+    fsReportPath: 'C:\testResult2'
     scenarioExecutionTimeout: '30'
     resultsFilename: 'ResultFilename'
 
