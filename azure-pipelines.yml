@@ -4,8 +4,8 @@
 trigger:
 - master
 
-pool: 'Default'
-  #vmImage: 'ubuntu-latest'
+#pool: 'Default'
+pool: 'AzureVms'
 
 steps:
 
