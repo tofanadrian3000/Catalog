@@ -15,38 +15,38 @@ steps:
     Test1: 'C:\Scenarios-Multiple'
 
 
-# Some parameters are set (on a single scenario folder) -> you can set others to default values too if you want
-- task: ExecMicroFocusTests@0
-  inputs:
-    Test1: 'C:\Scenarios-Single'
-    controllerPollingInterval: '50'
-    PerScenarioTimeOut: '5'
-    #resultsFilename: 'ReportsLogs.xml'
-    #fsReportPath: 'C:\LoadRunnerTestsResults'
+# # Some parameters are set (on a single scenario folder) -> you can set others to default values too if you want
+# - task: ExecMicroFocusTests@0
+#   inputs:
+#     Test1: 'C:\Scenarios-Single'
+#     controllerPollingInterval: '50'
+#     PerScenarioTimeOut: '5'
+#     #resultsFilename: 'ReportsLogs.xml'
+#     #fsReportPath: 'C:\LoadRunnerTestsResults'
 
 
-# All params are set (on a multiple scenarios folder) ->
-- task: ExecMicroFocusTests@0
-  inputs:
-    Test1: 'C:\Scenarios-Multiple'
-    fsReportPath: 'C:\Scenarios-Multiple-Specified-Directory'
-    controllerPollingInterval: '50'
-    PerScenarioTimeOut: '10'
-    pollingInterval: '20'
-    #analysisTemplate: 'C:\Scenarios-Multiple\templates\MyTemplate1\MyTemplate1.tem'
-    displayController: '1'
-    fsTimeout: '10'
-    resultsFilename: 'logs.xml'
+# # All params are set (on a multiple scenarios folder) ->
+# - task: ExecMicroFocusTests@0
+#   inputs:
+#     Test1: 'C:\Scenarios-Multiple'
+#     fsReportPath: 'C:\Scenarios-Multiple-Specified-Directory'
+#     controllerPollingInterval: '50'
+#     PerScenarioTimeOut: '10'
+#     pollingInterval: '20'
+#     #analysisTemplate: 'C:\Scenarios-Multiple\templates\MyTemplate1\MyTemplate1.tem'
+#     displayController: '1'
+#     fsTimeout: '10'
+#     resultsFilename: 'logs.xml'
 
 
-# Source folder with no scenarios
-- task: ExecMicroFocusTests@0
-  inputs:
-    Test1: 'C:\Scenarios-None'
+# # Source folder with no scenarios
+# - task: ExecMicroFocusTests@0
+#   inputs:
+#     Test1: 'C:\Scenarios-None'
 
 
-# Test1 parameter should be set in order to work
-#- task: ExecMicroFocusTests@0
-#  inputs:
+# # Test1 parameter should be set in order to work
+# #- task: ExecMicroFocusTests@0
+# #  inputs:
 
 
