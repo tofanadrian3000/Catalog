@@ -15,7 +15,7 @@ steps:
     Test1: 'C:\Scenarios-Single\Scenario2.lrs'
 
 
-# All params are set (on a multiple scenarios folder) ->
+# All params are set
 - task: ExecMicroFocusTests@0
   inputs:
     Test1: 'C:\Scenarios-Multiple2\Scen1.lrs'
