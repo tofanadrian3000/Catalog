@@ -12,7 +12,7 @@ steps:
 # Default configuration (on a multiple scenarios folder)-> default parameters are not required 
 - task: ExecMicroFocusTests@0
   inputs:
-    Test1: 'Scenarios-Multiple'
+    Test1: 'C:\Scenarios-Multiple'
 
 
 # Some parameters are set (on a single scenario folder) -> you can set others to default values too if you want
