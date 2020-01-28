@@ -23,7 +23,7 @@ steps:
     controllerPollingInterval: '50'
     PerScenarioTimeOut: '10'
     pollingInterval: '20'
-    #analysisTemplate: 'C:\Scenarios-Multiple2\templates\MyTemplate1\MyTemplate1.tem'
+    analysisTemplate: 'C:\Scenarios-Multiple2\templates\MyTemplate1\MyTemplate1.tem'
     displayController: '1'
     fsTimeout: '10'
     resultsFilename: 'logs.xml'
