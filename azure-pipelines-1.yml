@@ -1,0 +1,37 @@
+
+# Pipeline used to test MF tests extension on scenario  
+
+trigger:
+- master
+
+#pool: 'Default'
+pool: 'AzureVms'
+
+steps:
+
+# Default configuration (on a single scenario given by absolute path)-> default parameters are not required 
+- task: ExecMicroFocusTests@0
+  inputs:
+    Test1: 'C:\Scenarios-Single\Scenario2.lrs'
+
+
+# All params are set (on a multiple scenarios folder) ->
+- task: ExecMicroFocusTests@0
+  inputs:
+    Test1: 'C:\Scenarios-Multiple2\Scen1.lrs'
+    fsReportPath: 'C:\Scenarios-Multiple-Specified-Directory'
+    controllerPollingInterval: '50'
+    PerScenarioTimeOut: '10'
+    pollingInterval: '20'
+    #analysisTemplate: 'C:\Scenarios-Multiple2\templates\MyTemplate1\MyTemplate1.tem'
+    displayController: '1'
+    fsTimeout: '10'
+    resultsFilename: 'logs.xml'
+
+
+# Longer scenario path ->
+- task: ExecMicroFocusTests@0
+  inputs:
+    Test1: 'C:\Scenarios-Multiple\Scenarios-Single\Scenarios-Single\Scenarios-Single\Scenarios-Single\Scen2.lrs'
+    fsReportPath: 'C:\Scenarios-Multiple-Specified-Directory'
+    analysisTemplate: 'C:\Scenarios-Multiple\Scenarios-Single\Scenarios-Single\Scenarios-Single\Scenarios-Single\templates\MyTemplate1\MyTemplate1.tem'
