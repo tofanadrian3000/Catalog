@@ -46,7 +46,7 @@ steps:
 
 
 # Test1 parameter should be set in order to work
-#- task: ExecMicroFocusTests@0
-#  inputs:
+- task: ExecMicroFocusTests@0
+ inputs:
 
 
